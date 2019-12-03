@@ -1,0 +1,8 @@
+Turbo C++ is a mono-threaded environment, i.e. it can only perform one action at a time.
+It was a big challenge for me to implement context switches in the game so that 4 different functions seem to perform at a time, without any lag.
+1 st  Func - Movement of paddle.
+2 nd  Func - Movement of ball.
+3 rd  Func - Reflection of ball.
+4 rth Func - Breaking of bricks.
+
+I solved the issue using kbhit(), while(1), and gotoxy statements.
